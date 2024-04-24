@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+   --fondo: #1d1c1e;
+   --primario:#04d4c3;
+   --secundario: #2e3547;
+   --texto: #fafafb;
+}
+
+body {
+    background-color: var(--fondo);
+    height: 100vh;   
+    font-family: 'Prompt', sans-serif;
+}
+
+.container {
+    max-width: 80%;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+/*PERFIL*/
+
+
+
+.perfil h1 {
+    padding-top: 50px;
+    color: var(--texto);
+}
+
+
+/*AGREGAR TAREA*/
+
+.agregar-tarea {
+    background-color: var(--secundario) ;
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    margin: 40px 0;
+}
+
+.agregar-tarea input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--secundario);
+    color:var(--texto);
+    font-size: 18px;
+    padding-left: 10px;
+
+}
+.agregar-tarea input::placeholder {
+   color: var(--texto);
+}
+
+.agregar-tarea i{
+    font-size: 50px;
+    color: var(--texto);
+    transition: transform 0.5s ease, color 0.5s ease;
+
+}
+.agregar-tarea i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    color:var(--primario);
+}
+
+
+
+/*SECCION DE TAREA */
+
+.seccion-tarea h3 {
+    color: var(--texto);
+    margin-bottom: 20px;
+}
+
+.seccion-tarea li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secundario);
+    border-radius: 15px;
+    padding: 10px;
+    color: var(--texto);
+    margin: 5px 0;
+    transition: color 0.5s ease;
+
+}
+.seccion-tarea i {
+    font-size: 25px;
+    transition: color 0.5s ease;
+}
+
+.seccion-tarea > ul p {
+    font-size: 1.2rem;
+    transition: color 0.5s ease;
+}
+
+
+.seccion-tarea i:hover {
+    color: var(--primario);
+    cursor: pointer;
+}
+
+.line-through{
+    text-decoration: line-through;
+    color : var(--primario);
+    transition: color 0.5s ease;
+} 
+
+.fa-check-circle {
+    color: var(--primario);
+}
